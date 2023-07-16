@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A5AEE8"
+    android:elevation="8dp"
+    android:padding="16dp"
+    tools:context=".Login">
+
+    <TextView
+        android:id="@+id/textView"
+        style="@android:style/Widget.Material.TextView.SpinnerItem"
+        android:layout_width="239dp"
+        android:layout_height="33dp"
+        android:gravity="bottom"
+        android:text="User Login"
+        android:textAlignment="viewStart"
+        android:textColor="#E4DFDF"
+        android:textSize="25sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/view2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.197"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView3"
+        style="@android:style/Widget.Material.TextView.SpinnerItem"
+        android:layout_width="311dp"
+        android:layout_height="62dp"
+        android:gravity="center"
+        android:text="EMI calculator application"
+        android:textAlignment="viewStart"
+        android:textColor="#323232"
+        android:textSize="25sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/view2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.38"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.267" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="319dp"
+        android:layout_height="366dp"
+        android:background="@drawable/blur_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.7" />
+
+    <EditText
+        android:id="@+id/username_id"
+        android:layout_width="305dp"
+        android:layout_height="55dp"
+        android:background="@drawable/text_bg"
+        android:drawableLeft="@drawable/baseline_person_24"
+        android:ems="10"
+        android:hint="username"
+        android:inputType="textPersonName"
+        android:padding="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view2"
+        app:layout_constraintEnd_toEndOf="@+id/view2"
+        app:layout_constraintStart_toStartOf="@+id/view2"
+        app:layout_constraintTop_toTopOf="@+id/view2"
+        app:layout_constraintVertical_bias="0.061" />
+
+    <EditText
+        android:id="@+id/password_id"
+        android:layout_width="305dp"
+        android:layout_height="55dp"
+        android:background="@drawable/text_bg"
+        android:drawableLeft="@drawable/baseline_lock_24"
+        android:ems="10"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view2"
+        app:layout_constraintEnd_toEndOf="@+id/view2"
+        app:layout_constraintStart_toStartOf="@+id/view2"
+        app:layout_constraintTop_toTopOf="@+id/view2"
+        app:layout_constraintVertical_bias="0.32" />
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="295dp"
+        android:layout_height="57dp"
+        android:background="@drawable/button_bg"
+        android:backgroundTint="#168DEC"
+        android:gravity="center"
+        android:text="Login"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/view2"
+        app:layout_constraintEnd_toEndOf="@+id/view2"
+        app:layout_constraintStart_toStartOf="@+id/view2"
+        app:layout_constraintTop_toTopOf="@+id/view2"
+        app:layout_constraintVertical_bias="0.558" />
+
+    <Button
+        android:id="@+id/signup_btn"
+        android:layout_width="295dp"
+        android:layout_height="57dp"
+        android:background="@drawable/button_bg"
+        android:backgroundTint="#FFC107"
+        android:text="Sign Up"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/view2"
+        app:layout_constraintEnd_toEndOf="@+id/view2"
+        app:layout_constraintStart_toStartOf="@+id/view2"
+        app:layout_constraintTop_toTopOf="@+id/view2"
+        app:layout_constraintVertical_bias="0.794" />
+
+    <TextView
+        android:id="@+id/signupRedirectText"
+        android:layout_width="184dp"
+        android:layout_height="34dp"
+        android:gravity="center"
+        android:text="new user? sign up"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/view2"
+        app:layout_constraintEnd_toEndOf="@+id/view2"
+        app:layout_constraintHorizontal_bias="0.551"
+        app:layout_constraintStart_toStartOf="@+id/view2"
+        app:layout_constraintTop_toTopOf="@+id/view2"
+        app:layout_constraintVertical_bias="0.946" />
+
+</android.support.constraint.ConstraintLayout>
